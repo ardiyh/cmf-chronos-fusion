@@ -1,0 +1,33 @@
+{
+  "batch_dir": "/home/hilmi/Disertasi/paper1_CMF/CMF-code.worktrees/peer-review-r1/results/peer_review_controls/20261114_a4_scale_paced",
+  "family_size_per_metric": 16,
+  "point_primary": "sample_median",
+  "point_sensitivity": "sample_mean",
+  "WQL": "unnormalized doubled pinball loss; target units; equation (6)",
+  "inputs": {
+    "etth1/manifest.json": "92e45fd0f9e8045de5c1947c331f3bd5394052ef6305bcb68e032d10e3af4928",
+    "etth1/losses.csv": "fc8086deb9b50548606e7794133971ffa1e0b8f203acd3a0c3763d664f6c93ad",
+    "etth2/manifest.json": "993111c1feb91d65d797313fc3ed26c2fc00987abbb635e0b84fdcd71daf54f2",
+    "etth2/losses.csv": "63ac6641e8dff5247e2502511559a5bee47c9c8652446c78bc3954e5a9fc2674",
+    "ettm1/manifest.json": "621b8239f1cb8667427bf2477129b6130d0492f0bb6099b77f64600ae5d5f5b4",
+    "ettm1/losses.csv": "ddaa57759fbf2531733e743b46148f33c13b461a0cc1a62a1fcae37a5292e273",
+    "ettm2/manifest.json": "05c31c21681e601d7cfd91ffb0b4f6c8d15cbcc177f707e6fa6b0e2692abb480",
+    "ettm2/losses.csv": "cb34ed557218998cc585db2da8f3968f5bc8629dcce3eb621361547b21c9d46c",
+    "ecl/manifest.json": "da3d3d1debdd24fc58cd46cc629e295df6a6866b7404206f57e3e250ce17c532",
+    "ecl/losses.csv": "2af31d5b1884da20bccb4e44666646897f7a78737bf79b2b4bc25d8207d7941c",
+    "opsd-wind/manifest.json": "5c6d0c9c3a9e692b063609e25caccd6cf241cfec088acbacaa6b4eb4c247faf0",
+    "opsd-wind/losses.csv": "3952cc4a9ff725e25fa420a1fd2b46da6cb67eadb5860471d19e7524283e5829",
+    "sdwpf/manifest.json": "a2b013983b7ad8e257e04c0bfa564de62c8e438071fbd79a6f7f6b461691b0fb",
+    "sdwpf/losses.csv": "604b486467a9eb22b794c5b53bf22667b8bda15203b44e8bb66d935d75ce8ff5",
+    "solar-al/manifest.json": "2d97e718605869669101789b3ef853a116f88feacbd6cd5b19701ca5d8cff2c3",
+    "solar-al/losses.csv": "b3e1a20ecd7fd150d2b4d373a033a5ef430c8c7bdd0be1ca1f21b73a235e79d6"
+  },
+  "sources": {
+    "peer_review_control_analysis.py": "cd88c83836f0d355bc5efd1b67c7875efbeb91a1f6c64fa6bdf4e9a41a02c09b",
+    "peer_review_block_sensitivity.py": "7aa65dbc4b17c2988354aa54904f6eadb29dd4b62b61177b715d0c588c28342e",
+    "sinergi_stats.py": "758bbd6d875873769360422b15ad93135da9f451b1ca839159b8b1772aac7276",
+    "sinergi_block_robust.py": "c1b3c211d77bbff47ffb80c68cdad518ec7e18c165da174d474d678eb221df55",
+    "peer_review_scale_analysis.py": "0813260a5c3f41d4f59cf28078915bb53b7eb763fa7919a5ed7f30ff6674094b"
+  },
+  "protocol_sha256": "6471ee1446a5d96092f20a13bdea6d643287e69671021d122b33fc8f37e52fa5"
+}

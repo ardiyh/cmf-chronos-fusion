@@ -1,0 +1,9 @@
+{
+  "dataset": "ettm2",
+  "n_rows": 69680,
+  "target": "OT",
+  "seasonality": 96,
+  "data_sha256": "92b5c396cf91ef9eed2264accaabf32dda8a92bd566808b02dc1465e2a9bc3e9",
+  "origin_count": 150,
+  "saved_records_checked": 2886
+}

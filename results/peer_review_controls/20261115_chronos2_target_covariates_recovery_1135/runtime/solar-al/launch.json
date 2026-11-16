@@ -1,0 +1,30 @@
+{
+  "guard_pid": 452894,
+  "command": [
+    "/home/hilmi/chronos2_env/bin/python",
+    "scripts/run_with_gpu_guard.py",
+    "--output-dir",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/runtime/solar-al/guard",
+    "--power-limit",
+    "160",
+    "--max-temperature",
+    "85",
+    "--fan-rpm",
+    "--max-duration",
+    "14400",
+    "--",
+    "/home/hilmi/chronos2_env/bin/python",
+    "results/gpu_diagnostics/20261115_chronos2_control/recovery_1135/recover_chronos2_controls.py",
+    "--dataset",
+    "solar-al",
+    "--preflight",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/CHRONOS2_PREFLIGHT.json",
+    "--output-dir",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/solar-al",
+    "--pacing-dir",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/runtime/solar-al/pacing",
+    "--stage",
+    "full"
+  ],
+  "started_utc": "2026-11-15T07:27:15.844019+00:00"
+}

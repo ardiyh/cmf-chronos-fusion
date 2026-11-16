@@ -1,0 +1,10 @@
+# Chronos-T5 benchmark and controls (recorded on the x86-64 run host, CUDA 12.1)
+torch==2.4.1
+chronos-forecasting==1.5.3
+transformers==4.49.0
+numpy==1.26.4
+pandas==3.0.1
+scipy==1.11.4
+h5py
+tables
+matplotlib

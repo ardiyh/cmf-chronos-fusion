@@ -1,0 +1,9 @@
+{
+  "complete_records": 8752,
+  "analysis_sha256": {
+    "audit.json": "2ff27e07789656aaca752308097de20d1c3784c9db559e42570d995262511684",
+    "analysis.json": "a2afc60beb34e2973b7a6fd34d466a7aef51ba020875fc8c8233b4234d07782e",
+    "comparisons.csv": "aea04e69517a30443de5b2742352dc489ae7b42c579f04b8d424f9095fd6c44e",
+    "summaries.csv": "14356f6f52d7648c7bb45ce55c69de67b74ec9058faa1afffa9f85a3f145bd2e"
+  }
+}

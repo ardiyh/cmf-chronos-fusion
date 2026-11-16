@@ -1,0 +1,9 @@
+# LightGBM baseline and CPU analyses (CPU-only torch is sufficient)
+lightgbm==4.6.0
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.1
+torch==2.5.1
+h5py
+tables==3.11.1
+matplotlib

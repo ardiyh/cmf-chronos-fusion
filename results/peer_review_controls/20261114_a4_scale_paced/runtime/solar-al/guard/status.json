@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "command": [
+    "/home/hilmi/anaconda3/bin/python",
+    "results/peer_review_controls/20261114_a4_scale_paced/run_a4_paced.py",
+    "--dataset",
+    "solar-al",
+    "--output-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/solar-al",
+    "--pacing-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/runtime/solar-al/pacing"
+  ],
+  "started_utc": "2026-11-14T14:18:19.880995+00:00",
+  "required_power_limit_W": 160.0,
+  "temperature_guard_C": 85.0,
+  "max_duration_s": 14400.0,
+  "fan_rpm_logged": true,
+  "pid": 168838,
+  "returncode": 0,
+  "elapsed_s": 5224.334704141002,
+  "finished_utc": "2026-11-14T15:45:24.215720+00:00"
+}

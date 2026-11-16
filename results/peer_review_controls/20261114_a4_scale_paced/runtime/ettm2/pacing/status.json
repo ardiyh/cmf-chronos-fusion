@@ -1,0 +1,15 @@
+{
+  "status": "grid_complete",
+  "dataset": "ettm2",
+  "output_dir": "results/peer_review_controls/20261114_a4_scale_paced/ettm2",
+  "qualification_seconds": null,
+  "delay_before_prediction_s": 1.0,
+  "pause_temperature_C": 75,
+  "resume_temperature_C": 65,
+  "max_cooldown_s": 180,
+  "created_utc": "2026-11-14T08:26:36.224763+00:00",
+  "wrapper_sha256": "2f49ff485820bc9bab30f465752e72107e9019cfeef6cb7320ef719a25e213e8",
+  "calls": 3150,
+  "elapsed_prediction_window_s": 5132.320048568,
+  "finished_utc": "2026-11-14T09:52:11.789743+00:00"
+}

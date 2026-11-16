@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "supervisor_pid": 98460,
+  "complete_records": 24990,
+  "pending": [],
+  "created_utc": "2026-11-14T08:25:55.148408+00:00",
+  "updated_utc": "2026-11-14T15:48:28.018517+00:00",
+  "dataset": null,
+  "guard_pid": 168833,
+  "records_progress": 3150,
+  "guard_status": "complete",
+  "gpu": {
+    "timestamp": "2026/11/14 22:45:22.138",
+    "temperature": "70.0",
+    "power_limit": "160.0",
+    "power_draw": "99.21",
+    "fan": "57.0",
+    "utilization": "95.0",
+    "memory_used": "3302.0",
+    "hw_thermal": "Not Active",
+    "sw_thermal": "Not Active",
+    "power_brake": "Not Active",
+    "fan0_rpm": "1644.0",
+    "fan1_rpm": "1639.0"
+  },
+  "analysis_copied_and_hashed": true
+}

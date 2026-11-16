@@ -1,0 +1,10 @@
+{
+  "status": "grid_complete",
+  "stage": "full",
+  "duration_s": null,
+  "preflight_sha256": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+  "created_utc": "2026-11-15T06:23:51.216279+00:00",
+  "calls": 1180,
+  "elapsed_prediction_window_s": 3712.257003229999,
+  "finished_utc": "2026-11-15T07:25:43.736327+00:00"
+}

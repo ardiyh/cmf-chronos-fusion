@@ -1,0 +1,25 @@
+{
+  "family_size": 16,
+  "primary_point": "quantile_0.5",
+  "direction": "past_covariates - target_only; negative favors covariates",
+  "preflight_sha256": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+  "analysis_sha256": "e4acac4299617eef045f4cc0be2cfc5f4ffafb008428b5d5b9076b678db3e264",
+  "inputs": {
+    "etth1/manifest.json": "3470f531b5dfbc42aa53611adaa9658937d4a2bf35fcc68ac7cbc0ab17a5ad6f",
+    "etth1/losses.csv": "673a12ccb862bafe9a72c7f39a4498cddaa08fdc5f8c977e3a5ed21d2d08215f",
+    "etth2/manifest.json": "bf26b8fa9f454b84e1e38083b4fd580e5311b08714d64f7286f78742761370b2",
+    "etth2/losses.csv": "c4bb5e575b732ccb43f7d2bf4381392e8f707bf07208d3fe1cb2659d78347eac",
+    "ettm1/manifest.json": "ec4f742caaf7b891a31a10fca4e9281cf846daeabe72dffa4262231e054a21bd",
+    "ettm1/losses.csv": "1dd7851af6e7cf9e9444a647b4c4910650cad297fcb367458358d9bcf8be8997",
+    "ettm2/manifest.json": "373222949ae6d6ed0be526ebda11a32b65d3ad965f7dc046f23fb6e6a7ead431",
+    "ettm2/losses.csv": "2b906c69657202132c35094a4958eace6adad4f3b2f2f2dc3a5a497ed2d1a095",
+    "ecl/manifest.json": "a1946ba9d2352483230d1586522558cb473100dca507c1e16feb0cf9fc70fbb8",
+    "ecl/losses.csv": "3c86ec55ac53eefd9d7667d6a96b7d4ed51858af1fea5001250b315b862207e9",
+    "opsd-wind/manifest.json": "2be5cd0e62dd62cd4b41a7271f7665872565381bcd65caed6de167eb170e417e",
+    "opsd-wind/losses.csv": "c89664301758fb9b6ac1113561fa31986ede25013e75b31750d4ba3976a3637e",
+    "sdwpf/manifest.json": "e888c73e42dd4f10892cdebde44e9ffaa486a1397e3437411de542407df130b7",
+    "sdwpf/losses.csv": "742a3a14a5ac5fcdfda76c8e28f3d283da115de80f35755c1309c214c3ea8f94",
+    "solar-al/manifest.json": "a650fa6f01164c7404047ef112271aa4ca4b730c4b985eb02bc6d141502c9e9d",
+    "solar-al/losses.csv": "1d83df85cca26a760be7d58e4317ffb8b51c9d9eb86f9f832b0ccc79f9f82ee2"
+  }
+}

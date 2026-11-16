@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "command": [
+    "/home/hilmi/chronos2_env/bin/python",
+    "results/gpu_diagnostics/20261115_chronos2_control/recovery_1135/recover_chronos2_controls.py",
+    "--dataset",
+    "solar-al",
+    "--preflight",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/CHRONOS2_PREFLIGHT.json",
+    "--output-dir",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/solar-al",
+    "--pacing-dir",
+    "results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/runtime/solar-al/pacing",
+    "--stage",
+    "full"
+  ],
+  "started_utc": "2026-11-15T07:27:15.867818+00:00",
+  "required_power_limit_W": 160.0,
+  "temperature_guard_C": 85.0,
+  "max_duration_s": 14400.0,
+  "fan_rpm_logged": true,
+  "pid": 452903,
+  "returncode": 0,
+  "elapsed_s": 3781.923134853001,
+  "finished_utc": "2026-11-15T08:30:17.790969+00:00"
+}

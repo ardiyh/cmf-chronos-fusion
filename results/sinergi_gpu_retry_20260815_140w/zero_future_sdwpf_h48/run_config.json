@@ -1,0 +1,36 @@
+{
+  "timestamp_utc": "2026-08-15T06:31:19Z",
+  "git_commit": "2bbb790",
+  "tag": "sinergi-zero-future-sdwpf-h48-140w",
+  "model": "amazon/chronos-t5-base",
+  "num_samples": 50,
+  "context_len": 512,
+  "horizons": [
+    48
+  ],
+  "datasets": [
+    "sdwpf"
+  ],
+  "adapters": [
+    "identity",
+    "krr"
+  ],
+  "seeds": [
+    42
+  ],
+  "split": "test",
+  "max_origins": 150,
+  "batch_size": 1,
+  "no_scale_restoration": false,
+  "include_zero_future": true,
+  "adapter_kwargs_override": {},
+  "quantile_levels": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    0.8,
+    0.9,
+    0.95
+  ]
+}

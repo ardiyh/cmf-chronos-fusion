@@ -1,0 +1,17 @@
+dataset,H,sel_adapter,n_paired,delta_mase,delta_pct,wilcoxon_p,ci_lower,ci_upper,significant,note
+ecl,24,ridge,150,0.003,0.4,0.644493,-0.0028,0.0099,False,
+ecl,48,identity,0,0.0,0.0,,0.0,0.0,False,CMF-Select chose identity (no fusion)
+etth1,24,mlp,145,0.0075,1.05,0.708381,-0.0079,0.0234,False,
+etth1,48,mlp,72,0.005,0.52,0.774728,-0.0222,0.034,False,
+etth2,24,krr,145,-0.0004,-0.05,0.876867,-0.0257,0.0254,False,
+etth2,48,krr,72,-0.0065,-0.64,0.629376,-0.0467,0.033,False,
+ettm1,24,mlp,150,-0.0047,-1.05,0.530265,-0.0167,0.0074,False,
+ettm1,48,identity,0,0.0,0.0,,0.0,0.0,False,CMF-Select chose identity (no fusion)
+ettm2,24,mlp,150,-0.0269,-6.65,0.810935,-0.0599,0.0018,False,
+ettm2,48,krr,150,-0.0632,-7.56,0.073616,-0.1196,-0.0081,False,
+opsd-wind,24,mlp,150,0.0068,1.07,0.431234,-0.0067,0.0208,False,
+opsd-wind,48,krr,150,-0.0009,-0.11,0.741944,-0.0183,0.0167,False,
+sdwpf,24,ridge,122,-0.0019,-0.33,0.769868,-0.0062,0.0009,False,
+sdwpf,48,mlp,132,-0.0001,-0.01,0.788691,-0.0197,0.0192,False,
+solar-al,24,krr,93,-0.3399,-16.25,0.001046,-0.5145,-0.1854,True,
+solar-al,48,krr,139,-0.1605,-10.48,0.000634,-0.2641,-0.0638,True,

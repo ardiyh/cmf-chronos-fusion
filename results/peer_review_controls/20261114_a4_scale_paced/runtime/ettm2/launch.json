@@ -1,0 +1,26 @@
+{
+  "guard_pid": 32640,
+  "command": [
+    "/home/hilmi/anaconda3/bin/python",
+    "results/peer_review_controls/20261114_a4_scale_paced/run_with_gpu_guard.py",
+    "--output-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/runtime/ettm2/guard",
+    "--power-limit",
+    "160",
+    "--max-temperature",
+    "85",
+    "--fan-rpm",
+    "--max-duration",
+    "14400",
+    "--",
+    "/home/hilmi/anaconda3/bin/python",
+    "results/peer_review_controls/20261114_a4_scale_paced/run_a4_paced.py",
+    "--dataset",
+    "ettm2",
+    "--output-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/ettm2",
+    "--pacing-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/runtime/ettm2/pacing"
+  ],
+  "started_utc": "2026-11-14T08:26:36.063939+00:00"
+}

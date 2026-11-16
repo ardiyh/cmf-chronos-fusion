@@ -1,0 +1,9 @@
+{
+  "dataset": "sdwpf",
+  "n_rows": 35016,
+  "target": "turbine_0",
+  "seasonality": 144,
+  "data_sha256": "b2afda5b6cc1eed200e1b5e1c7a7508466012ba8a9a25471e88f5d7cd3427e5c",
+  "origin_count": 150,
+  "saved_records_checked": 0
+}

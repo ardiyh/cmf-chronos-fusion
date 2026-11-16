@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-11-15T04:31:49.624280+00:00",
+  "explicit_user_continuation": true,
+  "thermal_cause_unresolved": true,
+  "delay_s": 3,
+  "guard_C": 85,
+  "cap_W": 160,
+  "qualification_s": 900,
+  "qualification_deadline_s": 1020,
+  "runner_sha256": "162eb456a10d3aa8f2d1be26f355abe6210161eb923b422e497e8ff717b3d1ae",
+  "protocol_sha256": "ce9dd62eef7321cce744b47ab60bdca0d1cd74a9d6946660435847fed99c10b8"
+}

@@ -1,0 +1,42 @@
+{
+  "timestamp_utc": "2026-08-15T06:51:45Z",
+  "git_commit": "2bbb790",
+  "tag": "sinergi-scale-unrestored-140w",
+  "model": "amazon/chronos-t5-base",
+  "num_samples": 50,
+  "context_len": 512,
+  "horizons": [
+    24
+  ],
+  "datasets": [
+    "ecl",
+    "etth1",
+    "etth2",
+    "ettm1",
+    "ettm2",
+    "opsd-wind",
+    "sdwpf",
+    "solar-al"
+  ],
+  "adapters": [
+    "ridge"
+  ],
+  "seeds": [
+    42
+  ],
+  "split": "test",
+  "max_origins": 150,
+  "batch_size": 1,
+  "no_scale_restoration": true,
+  "include_zero_future": false,
+  "adapter_kwargs_override": {},
+  "quantile_levels": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    0.8,
+    0.9,
+    0.95
+  ]
+}

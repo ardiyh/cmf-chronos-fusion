@@ -1,0 +1,15 @@
+{
+  "status": "grid_complete",
+  "dataset": "sdwpf",
+  "output_dir": "results/peer_review_controls/20261114_a4_scale_paced/sdwpf",
+  "qualification_seconds": null,
+  "delay_before_prediction_s": 1.0,
+  "pause_temperature_C": 75,
+  "resume_temperature_C": 65,
+  "max_cooldown_s": 180,
+  "created_utc": "2026-11-14T12:49:31.657354+00:00",
+  "wrapper_sha256": "2f49ff485820bc9bab30f465752e72107e9019cfeef6cb7320ef719a25e213e8",
+  "calls": 3150,
+  "elapsed_prediction_window_s": 5220.112838134999,
+  "finished_utc": "2026-11-14T14:16:35.169567+00:00"
+}

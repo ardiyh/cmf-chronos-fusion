@@ -1,0 +1,9 @@
+# Chronos-2 controls (recorded on the x86-64 run host, CUDA 12.1)
+torch==2.5.1
+chronos-forecasting==2.3.1
+transformers==5.15.1
+numpy==2.5.2
+pandas==3.0.5
+scipy==1.18.1
+h5py==3.16.0
+matplotlib==3.11.1

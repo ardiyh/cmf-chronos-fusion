@@ -1,0 +1,47 @@
+{
+  "run_dir": "results/peer_review_controls/20261113_solar_attribution",
+  "argv": null,
+  "script_sha256": "cd88c83836f0d355bc5efd1b67c7875efbeb91a1f6c64fa6bdf4e9a41a02c09b",
+  "losses_sha256": "f1bd9d943a6d1dd6a9c48c4dfbd58135198659b1822e87f1ec7d437814ad3917",
+  "manifest_sha256": "b1798b0ff677957800fe35ab3db20a196f1afbe016dceb912e1eaf21780882b3",
+  "noise_summary": {
+    "endpoint_label": "ChronosPipeline: amazon/chronos-t5-base",
+    "scope": "identity/target_units (bare endpoint) on this run's grid only",
+    "by_horizon": {
+      "24": {
+        "same_seed_replay": {
+          "n_pairs": 450,
+          "max_abs_sample_diff": 0.0,
+          "max_abs_mase_diff": 0.0
+        },
+        "independent_repetitions": {
+          "n_repetitions": 3,
+          "case_mean_mase": [
+            1.3559628898800544,
+            1.3491688315227437,
+            1.357286367916185
+          ],
+          "std_case_mean_mase": 0.00435517355516228,
+          "relative_range_pct": 0.5994609280702209
+        }
+      },
+      "48": {
+        "same_seed_replay": {
+          "n_pairs": 450,
+          "max_abs_sample_diff": 0.0,
+          "max_abs_mase_diff": 0.0
+        },
+        "independent_repetitions": {
+          "n_repetitions": 3,
+          "case_mean_mase": [
+            1.3371739592352585,
+            1.3194746253532519,
+            1.32763782791479
+          ],
+          "std_case_mean_mase": 0.008858537280392948,
+          "relative_range_pct": 1.3326853581456943
+        }
+      }
+    }
+  }
+}

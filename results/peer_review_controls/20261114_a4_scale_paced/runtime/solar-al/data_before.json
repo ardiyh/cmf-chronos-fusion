@@ -1,0 +1,9 @@
+{
+  "dataset": "solar-al",
+  "n_rows": 52560,
+  "target": "solar_0",
+  "seasonality": 144,
+  "data_sha256": "456205e748484b263b506cf0a3c20ebb6ecaf9e3dd62411f8a60b43d9d5db7d1",
+  "origin_count": 150,
+  "saved_records_checked": 0
+}

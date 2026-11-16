@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "command": [
+    "/home/hilmi/anaconda3/bin/python",
+    "results/peer_review_controls/20261114_a4_scale_paced/run_a4_paced.py",
+    "--dataset",
+    "ettm2",
+    "--output-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/ettm2",
+    "--pacing-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/runtime/ettm2/pacing"
+  ],
+  "started_utc": "2026-11-14T08:26:36.090314+00:00",
+  "required_power_limit_W": 160.0,
+  "temperature_guard_C": 85.0,
+  "max_duration_s": 14400.0,
+  "fan_rpm_logged": true,
+  "pid": 32644,
+  "returncode": 0,
+  "elapsed_s": 5136.715000994999,
+  "finished_utc": "2026-11-14T09:52:12.805336+00:00"
+}

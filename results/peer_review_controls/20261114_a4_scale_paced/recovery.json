@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-11-14T08:26:16.301500+00:00",
+  "inference_commit": "3655cc9f58de5ef1e6183903db7fd68c14334bd9",
+  "inference_sources": {
+    "experiments/run_peer_review_controls.py": "c7894147a0d1b394d6af2e9040f688bb57a8210f1f730a15c8d3a464fac65cc1",
+    "experiments/run_revision.py": "e68a2e26dfbf678d5ca61eb2ff7a41596f814702a99eb9a26935ba49937b96b8",
+    "src/cmf_core.py": "03c8e54f6198ab384ea1f655161bf10ff683de210349350f5e7350e3d40d3d7d"
+  },
+  "prior_batch": "results/peer_review_controls/20261114_a4_scale",
+  "partials_retained_in_prior_batch": true,
+  "reused_complete": [
+    "etth1",
+    "etth2",
+    "ettm1"
+  ],
+  "pending": [
+    "ettm2",
+    "ecl",
+    "opsd-wind",
+    "sdwpf",
+    "solar-al"
+  ],
+  "source_sha256": {
+    "A4_SCALE_PROTOCOL.md": "6471ee1446a5d96092f20a13bdea6d643287e69671021d122b33fc8f37e52fa5",
+    "prior_complete_audit.json": "ffc7b97602203c8241ae47019f7a9a4ed805f543aad9611869e88c0b449572ae",
+    "qualification.json": "45d158b6d1f4652ca781def8954582eb3fd3ade220975e089a8411c6c76998e5",
+    "peer_review_scale_analysis.py": "0813260a5c3f41d4f59cf28078915bb53b7eb763fa7919a5ed7f30ff6674094b",
+    "A4_PACING_PROTOCOL.md": "ab61292a004a74dbe4050622133f7dcad00066906f94f0bad7d55e4a69d14faa",
+    "a4_paced_remote.py": "35a3fbb8ea70b315f02ead1807d13281475e640756e1070a8fda918f0a24bb11",
+    "run_a4_paced.py": "2f49ff485820bc9bab30f465752e72107e9019cfeef6cb7320ef719a25e213e8",
+    "run_with_gpu_guard.py": "06c96191063b53bd78da1281b4891224d69935e62e0616c144a33417c4e64932",
+    "audit_a4_recovery.py": "954f5330c86ddff55d1d0a11149ed770531b82742cce9ea1d9f2017d176db5b7",
+    "supervise_a4_paced.py": "48db4310143b53073da6bd426a089cb297f70a505980628ce1d9f290f5d46f0f"
+  }
+}

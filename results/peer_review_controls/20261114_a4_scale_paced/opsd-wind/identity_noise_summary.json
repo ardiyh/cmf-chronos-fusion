@@ -1,0 +1,23 @@
+{
+  "endpoint_label": "PacedEndpoint: amazon/chronos-t5-base",
+  "scope": "identity/target_units (bare endpoint) on this run's grid only",
+  "by_horizon": {
+    "24": {
+      "same_seed_replay": {
+        "n_pairs": 450,
+        "max_abs_sample_diff": 0.0,
+        "max_abs_mase_diff": 0.0
+      },
+      "independent_repetitions": {
+        "n_repetitions": 3,
+        "case_mean_mase": [
+          0.6364433172160451,
+          0.6507857688778084,
+          0.6504709811664808
+        ],
+        "std_case_mean_mase": 0.008191259232453969,
+        "relative_range_pct": 2.2205374150667794
+      }
+    }
+  }
+}

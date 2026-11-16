@@ -1,0 +1,704 @@
+{
+  "schema": "cmf-lgbm-baseline-v1",
+  "status": "complete",
+  "dataset": "opsd-wind",
+  "target": "DE",
+  "seasonality": 24,
+  "n_rows": 43824,
+  "data_sha256": "01ae98d5ed02edde11e0bfc5f330119b33bc12672b15de83903d0d94f87e665f",
+  "origins": {
+    "24": [
+      35059,
+      35107,
+      35155,
+      35227,
+      35275,
+      35347,
+      35395,
+      35467,
+      35515,
+      35563,
+      35635,
+      35683,
+      35755,
+      35803,
+      35875,
+      35923,
+      35995,
+      36043,
+      36091,
+      36163,
+      36211,
+      36283,
+      36331,
+      36403,
+      36451,
+      36523,
+      36571,
+      36619,
+      36691,
+      36739,
+      36811,
+      36859,
+      36931,
+      36979,
+      37051,
+      37099,
+      37147,
+      37219,
+      37267,
+      37339,
+      37387,
+      37459,
+      37507,
+      37579,
+      37627,
+      37675,
+      37747,
+      37795,
+      37867,
+      37915,
+      37987,
+      38035,
+      38107,
+      38155,
+      38203,
+      38275,
+      38323,
+      38395,
+      38443,
+      38515,
+      38563,
+      38635,
+      38683,
+      38731,
+      38803,
+      38851,
+      38923,
+      38971,
+      39043,
+      39091,
+      39163,
+      39211,
+      39259,
+      39331,
+      39379,
+      39451,
+      39499,
+      39571,
+      39619,
+      39667,
+      39739,
+      39787,
+      39859,
+      39907,
+      39979,
+      40027,
+      40099,
+      40147,
+      40195,
+      40267,
+      40315,
+      40387,
+      40435,
+      40507,
+      40555,
+      40627,
+      40675,
+      40723,
+      40795,
+      40843,
+      40915,
+      40963,
+      41035,
+      41083,
+      41155,
+      41203,
+      41251,
+      41323,
+      41371,
+      41443,
+      41491,
+      41563,
+      41611,
+      41683,
+      41731,
+      41779,
+      41851,
+      41899,
+      41971,
+      42019,
+      42091,
+      42139,
+      42211,
+      42259,
+      42307,
+      42379,
+      42427,
+      42499,
+      42547,
+      42619,
+      42667,
+      42739,
+      42787,
+      42835,
+      42907,
+      42955,
+      43027,
+      43075,
+      43147,
+      43195,
+      43267,
+      43315,
+      43363,
+      43435,
+      43483,
+      43555,
+      43603,
+      43675,
+      43723,
+      43795
+    ],
+    "48": [
+      35059,
+      35107,
+      35155,
+      35203,
+      35251,
+      35347,
+      35395,
+      35443,
+      35491,
+      35539,
+      35635,
+      35683,
+      35731,
+      35779,
+      35875,
+      35923,
+      35971,
+      36019,
+      36067,
+      36163,
+      36211,
+      36259,
+      36307,
+      36355,
+      36451,
+      36499,
+      36547,
+      36595,
+      36691,
+      36739,
+      36787,
+      36835,
+      36883,
+      36979,
+      37027,
+      37075,
+      37123,
+      37171,
+      37267,
+      37315,
+      37363,
+      37411,
+      37507,
+      37555,
+      37603,
+      37651,
+      37699,
+      37795,
+      37843,
+      37891,
+      37939,
+      37987,
+      38083,
+      38131,
+      38179,
+      38227,
+      38323,
+      38371,
+      38419,
+      38467,
+      38515,
+      38611,
+      38659,
+      38707,
+      38755,
+      38803,
+      38899,
+      38947,
+      38995,
+      39043,
+      39139,
+      39187,
+      39235,
+      39283,
+      39331,
+      39427,
+      39475,
+      39523,
+      39571,
+      39619,
+      39715,
+      39763,
+      39811,
+      39859,
+      39955,
+      40003,
+      40051,
+      40099,
+      40147,
+      40243,
+      40291,
+      40339,
+      40387,
+      40435,
+      40531,
+      40579,
+      40627,
+      40675,
+      40771,
+      40819,
+      40867,
+      40915,
+      40963,
+      41059,
+      41107,
+      41155,
+      41203,
+      41251,
+      41347,
+      41395,
+      41443,
+      41491,
+      41587,
+      41635,
+      41683,
+      41731,
+      41779,
+      41875,
+      41923,
+      41971,
+      42019,
+      42067,
+      42163,
+      42211,
+      42259,
+      42307,
+      42403,
+      42451,
+      42499,
+      42547,
+      42595,
+      42691,
+      42739,
+      42787,
+      42835,
+      42883,
+      42979,
+      43027,
+      43075,
+      43123,
+      43219,
+      43267,
+      43315,
+      43363,
+      43411,
+      43507,
+      43555,
+      43603,
+      43651,
+      43747
+    ]
+  },
+  "origin_sha256": {
+    "24": "fa034445fbf7988c6da72deb154e5689cec07641b5ce63a475227dfba0ca2f33",
+    "48": "e4e0d2ed16c3f1121149a8c0226f5d0e872ba9aff8ae51b00678a6b9a895470b"
+  },
+  "protocol_sha256": "45c2ab7a5ffeb5c9e82b2e0ba20d71bdc7995a3d832fec2c76e11f118cdfd2c4",
+  "replay": false,
+  "quantile_levels": [
+    0.05,
+    0.1,
+    0.2,
+    0.25,
+    0.5,
+    0.75,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "grid": [
+    {
+      "num_leaves": 15,
+      "min_child_samples": 200
+    },
+    {
+      "num_leaves": 15,
+      "min_child_samples": 20
+    },
+    {
+      "num_leaves": 63,
+      "min_child_samples": 200
+    },
+    {
+      "num_leaves": 63,
+      "min_child_samples": 20
+    }
+  ],
+  "base_params": {
+    "objective": "quantile",
+    "learning_rate": 0.05,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "lambda_l2": 1.0,
+    "max_bin": 255,
+    "deterministic": true,
+    "force_row_wise": true,
+    "num_threads": 8,
+    "seed": 2026,
+    "verbose": -1
+  },
+  "max_rounds": 2000,
+  "patience": 100,
+  "context_length": 512,
+  "n_lags": 24,
+  "n_phase": 3,
+  "max_train_origins": 3000,
+  "sigma_floor": 0.01,
+  "environment": {
+    "python": "3.12.7",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "git_dirty": false,
+    "source_sha256": {
+      "experiments/run_lgbm_baseline.py": "e3cac97f0101a5403532e69848b067d04a4e99ad76a8c8ad7e185c2491ae1927",
+      "src/cmf_core.py": "03c8e54f6198ab384ea1f655161bf10ff683de210349350f5e7350e3d40d3d7d",
+      "experiments/run_chronos2_controls.py": "3311ea2168c969cedec8d85db15bf0e8a155d59c49374f33e3a1401bc6d50edb"
+    }
+  },
+  "created_utc": "2026-11-16T03:48:18.424343+00:00",
+  "selection": {
+    "H24_target_only": {
+      "grid_scores": [
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 200
+          },
+          "best_iteration": 260,
+          "validation_MASE": 0.7173241167381181
+        },
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 20
+          },
+          "best_iteration": 238,
+          "validation_MASE": 0.715890122176187
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 200
+          },
+          "best_iteration": 99,
+          "validation_MASE": 0.7150834105113176
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 20
+          },
+          "best_iteration": 93,
+          "validation_MASE": 0.7190412468080069
+        }
+      ],
+      "chosen": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "chosen_index": 2,
+      "iterations_per_quantile": {
+        "0.05": 49,
+        "0.1": 76,
+        "0.2": 47,
+        "0.25": 70,
+        "0.5": 99,
+        "0.75": 138,
+        "0.8": 93,
+        "0.9": 53,
+        "0.95": 48
+      },
+      "n_rows": {
+        "train": 72000,
+        "validation": 8760,
+        "refit": 72000,
+        "test": 3600
+      },
+      "n_features": 30,
+      "origin_ranges": {
+        "train": [
+          512,
+          26270,
+          3000
+        ],
+        "refit": [
+          512,
+          35035,
+          3000
+        ],
+        "validation": [
+          26294,
+          35030,
+          365
+        ]
+      }
+    },
+    "H24_past_covariates": {
+      "grid_scores": [
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 200
+          },
+          "best_iteration": 280,
+          "validation_MASE": 0.7016859053598331
+        },
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 20
+          },
+          "best_iteration": 458,
+          "validation_MASE": 0.6978839834577611
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 200
+          },
+          "best_iteration": 89,
+          "validation_MASE": 0.6976182139262989
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 20
+          },
+          "best_iteration": 128,
+          "validation_MASE": 0.699500381172657
+        }
+      ],
+      "chosen": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "chosen_index": 2,
+      "iterations_per_quantile": {
+        "0.05": 59,
+        "0.1": 54,
+        "0.2": 64,
+        "0.25": 64,
+        "0.5": 89,
+        "0.75": 115,
+        "0.8": 131,
+        "0.9": 58,
+        "0.95": 53
+      },
+      "n_rows": {
+        "train": 72000,
+        "validation": 8760,
+        "refit": 72000,
+        "test": 3600
+      },
+      "n_features": 57,
+      "origin_ranges": {
+        "train": [
+          512,
+          26270,
+          3000
+        ],
+        "refit": [
+          512,
+          35035,
+          3000
+        ],
+        "validation": [
+          26294,
+          35030,
+          365
+        ]
+      }
+    },
+    "H48_target_only": {
+      "grid_scores": [
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 200
+          },
+          "best_iteration": 119,
+          "validation_MASE": 0.8552698782936342
+        },
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 20
+          },
+          "best_iteration": 208,
+          "validation_MASE": 0.8533653766382503
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 200
+          },
+          "best_iteration": 80,
+          "validation_MASE": 0.8633065204438185
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 20
+          },
+          "best_iteration": 131,
+          "validation_MASE": 0.8614975827784418
+        }
+      ],
+      "chosen": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "chosen_index": 1,
+      "iterations_per_quantile": {
+        "0.05": 176,
+        "0.1": 160,
+        "0.2": 142,
+        "0.25": 118,
+        "0.5": 208,
+        "0.75": 261,
+        "0.8": 113,
+        "0.9": 243,
+        "0.95": 188
+      },
+      "n_rows": {
+        "train": 144000,
+        "validation": 8736,
+        "refit": 144000,
+        "test": 7200
+      },
+      "n_features": 30,
+      "origin_ranges": {
+        "train": [
+          512,
+          26246,
+          3000
+        ],
+        "refit": [
+          512,
+          35011,
+          3000
+        ],
+        "validation": [
+          26294,
+          34982,
+          182
+        ]
+      }
+    },
+    "H48_past_covariates": {
+      "grid_scores": [
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 200
+          },
+          "best_iteration": 85,
+          "validation_MASE": 0.8475311222714751
+        },
+        {
+          "params": {
+            "num_leaves": 15,
+            "min_child_samples": 20
+          },
+          "best_iteration": 66,
+          "validation_MASE": 0.8531897299227778
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 200
+          },
+          "best_iteration": 323,
+          "validation_MASE": 0.8314588652745678
+        },
+        {
+          "params": {
+            "num_leaves": 63,
+            "min_child_samples": 20
+          },
+          "best_iteration": 244,
+          "validation_MASE": 0.8272038751791385
+        }
+      ],
+      "chosen": {
+        "num_leaves": 63,
+        "min_child_samples": 20
+      },
+      "chosen_index": 3,
+      "iterations_per_quantile": {
+        "0.05": 90,
+        "0.1": 63,
+        "0.2": 59,
+        "0.25": 50,
+        "0.5": 244,
+        "0.75": 157,
+        "0.8": 73,
+        "0.9": 61,
+        "0.95": 97
+      },
+      "n_rows": {
+        "train": 144000,
+        "validation": 8736,
+        "refit": 144000,
+        "test": 7200
+      },
+      "n_features": 57,
+      "origin_ranges": {
+        "train": [
+          512,
+          26246,
+          3000
+        ],
+        "refit": [
+          512,
+          35011,
+          3000
+        ],
+        "validation": [
+          26294,
+          34982,
+          182
+        ]
+      }
+    }
+  },
+  "seconds": {
+    "H24_target_only": 13.6,
+    "H24_past_covariates": 23.9,
+    "H48_target_only": 19.0,
+    "H48_past_covariates": 35.5
+  },
+  "completed_utc": "2026-11-16T03:49:50.503163+00:00",
+  "losses_sha256": "f91adfc99f36277c0f09a16d3531983a86231d947666b02f06c970aae496a71e"
+}

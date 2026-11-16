@@ -1,0 +1,9 @@
+{
+  "dataset": "ecl",
+  "n_rows": 26304,
+  "target": "MT_001",
+  "seasonality": 24,
+  "data_sha256": "0e4fb00405f3fe7a22e7bcabc0760c85ce56c143a45c4dddee0ce28e8cfdbcb7",
+  "origin_count": 150,
+  "saved_records_checked": 0
+}

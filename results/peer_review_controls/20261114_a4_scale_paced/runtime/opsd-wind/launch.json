@@ -1,0 +1,26 @@
+{
+  "guard_pid": 101304,
+  "command": [
+    "/home/hilmi/anaconda3/bin/python",
+    "results/peer_review_controls/20261114_a4_scale_paced/run_with_gpu_guard.py",
+    "--output-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/runtime/opsd-wind/guard",
+    "--power-limit",
+    "160",
+    "--max-temperature",
+    "85",
+    "--fan-rpm",
+    "--max-duration",
+    "14400",
+    "--",
+    "/home/hilmi/anaconda3/bin/python",
+    "results/peer_review_controls/20261114_a4_scale_paced/run_a4_paced.py",
+    "--dataset",
+    "opsd-wind",
+    "--output-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/opsd-wind",
+    "--pacing-dir",
+    "results/peer_review_controls/20261114_a4_scale_paced/runtime/opsd-wind/pacing"
+  ],
+  "started_utc": "2026-11-14T11:22:23.831399+00:00"
+}

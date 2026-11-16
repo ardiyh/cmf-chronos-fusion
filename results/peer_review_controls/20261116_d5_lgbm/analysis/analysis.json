@@ -1,0 +1,39 @@
+{
+  "family_size": 16,
+  "point": "quantile_0.5",
+  "protocol_sha256": "45c2ab7a5ffeb5c9e82b2e0ba20d71bdc7995a3d832fec2c76e11f118cdfd2c4",
+  "primary": "lgbm past_covariates - lgbm target_only; negative favors covariates",
+  "secondary": "lgbm past_covariates - chronos2 past_covariates; separate Holm16 family",
+  "replay_bitwise_identical": [
+    "etth1",
+    "opsd-wind"
+  ],
+  "analysis_sha256": "8e3953ddbc98d0a5662b34155f19a81191710d2d76740868b3354a67840c327f",
+  "preflight_sha256": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+  "inputs": {
+    "etth1/manifest.json": "12318a8b2ecce236fa92531dd33ac5bf4ffdc6eeeae96da8b5c1e83c762c8bd7",
+    "etth1/losses.csv": "f6493a425f367861c500a8cddcc3b13ad9be9f61c04c1c624960e3475cb7ed1b",
+    "etth2/manifest.json": "2ce42dd7cdfd301d020f6a7e37f606d426affea65655393c6a030c9010357196",
+    "etth2/losses.csv": "53d47d41a0e44de18ddc0c5f3581ce442ef01dfa9eb1b2512b942a4386e47850",
+    "ettm1/manifest.json": "43ab2ff33978c58e7c522d5428dc95f52f8c33dab4f11a864c078d7630826d92",
+    "ettm1/losses.csv": "0fefe21b0c21eb15cdaf90646d2833ff29ac06667404d1a3ab3337cae3c9f1cb",
+    "ettm2/manifest.json": "1e7be5cbb0dca552e9bae5b8b699f12da9c110b09b56e4dcfcbe3dc0cf28f0f5",
+    "ettm2/losses.csv": "26f2a29bb5abd3037d94fd8635dc36fdb5748ce2eaabe7395311c7a51c2f7d96",
+    "ecl/manifest.json": "8a663ec7802af31ffee2bdc87c7643f9c328530feedfee208fcca4a6c54c9e70",
+    "ecl/losses.csv": "b6e56b48ff969286857135766d4d06b0d4e84a6a2137a826d1650237b27c292a",
+    "opsd-wind/manifest.json": "ef492deef58e607a3b85185e6861cddffae4ca32314e313bbd9a918030161ca1",
+    "opsd-wind/losses.csv": "f91adfc99f36277c0f09a16d3531983a86231d947666b02f06c970aae496a71e",
+    "sdwpf/manifest.json": "5fafb4743bb64b062c45ddbd12b06076669266ae602fa32aad332de2a35059b7",
+    "sdwpf/losses.csv": "3324b302cd36cdc73b19be250ad7b11066cca2b8307145ad02b96a97af7007f6",
+    "solar-al/manifest.json": "b8b7ec28e0e6ccf24502ebc8e94c3621625c05407359da8ba929933e4ccc9b04",
+    "solar-al/losses.csv": "4592a78ccb9793bc03dab8969a9c8438b54596a610031148eb454ced4e16e4f1",
+    "c2/etth1/losses.csv": "673a12ccb862bafe9a72c7f39a4498cddaa08fdc5f8c977e3a5ed21d2d08215f",
+    "c2/etth2/losses.csv": "c4bb5e575b732ccb43f7d2bf4381392e8f707bf07208d3fe1cb2659d78347eac",
+    "c2/ettm1/losses.csv": "1dd7851af6e7cf9e9444a647b4c4910650cad297fcb367458358d9bcf8be8997",
+    "c2/ettm2/losses.csv": "2b906c69657202132c35094a4958eace6adad4f3b2f2f2dc3a5a497ed2d1a095",
+    "c2/ecl/losses.csv": "3c86ec55ac53eefd9d7667d6a96b7d4ed51858af1fea5001250b315b862207e9",
+    "c2/opsd-wind/losses.csv": "c89664301758fb9b6ac1113561fa31986ede25013e75b31750d4ba3976a3637e",
+    "c2/sdwpf/losses.csv": "742a3a14a5ac5fcdfda76c8e28f3d283da115de80f35755c1309c214c3ea8f94",
+    "c2/solar-al/losses.csv": "1d83df85cca26a760be7d58e4317ffb8b51c9d9eb86f9f832b0ccc79f9f82ee2"
+  }
+}

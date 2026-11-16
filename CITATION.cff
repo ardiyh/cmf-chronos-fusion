@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this code or results, please cite the article."
+title: "cmf-chronos-fusion: code and results for pre-tokenization multivariate fusion with a frozen Chronos-T5"
+type: software
+license: MIT
+repository-code: "https://github.com/ardiyh/cmf-chronos-fusion"
+authors:
+  - family-names: Hilmi
+    given-names: Ardi Yusri
+    orcid: "https://orcid.org/0009-0004-3931-5998"
+    affiliation: "Universitas Gadjah Mada"
+  - family-names: Winarko
+    given-names: Edi
+    orcid: "https://orcid.org/0000-0001-6057-5082"
+    affiliation: "Universitas Gadjah Mada"
+  - family-names: Wibowo
+    given-names: Moh Edi
+    orcid: "https://orcid.org/0000-0002-4666-6233"
+    affiliation: "Universitas Gadjah Mada"
+  - family-names: Dharmawan
+    given-names: Andi
+    orcid: "https://orcid.org/0000-0002-5780-9869"
+    affiliation: "Universitas Gadjah Mada"
+preferred-citation:
+  type: article
+  title: "Pre-tokenization multivariate fusion for energy forecasting with a frozen scalar-interface Chronos-T5"
+  authors:
+    - family-names: Hilmi
+      given-names: Ardi Yusri
+    - family-names: Winarko
+      given-names: Edi
+    - family-names: Wibowo
+      given-names: Moh Edi
+    - family-names: Dharmawan
+      given-names: Andi
+  journal: "SINERGI"
+  status: submitted

@@ -1,0 +1,9 @@
+{
+  "dataset": "opsd-wind",
+  "n_rows": 43824,
+  "target": "DE",
+  "seasonality": 24,
+  "data_sha256": "01ae98d5ed02edde11e0bfc5f330119b33bc12672b15de83903d0d94f87e665f",
+  "origin_count": 150,
+  "saved_records_checked": 0
+}

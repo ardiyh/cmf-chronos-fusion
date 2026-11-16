@@ -1,0 +1,274 @@
+{
+  "etth1": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 14.0,
+      "H24_past_covariates": 14.7,
+      "H48_target_only": 20.6,
+      "H48_past_covariates": 19.3
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 20
+      },
+      "H24_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "H48_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 20
+      },
+      "H48_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      }
+    }
+  },
+  "etth2": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 17.8,
+      "H24_past_covariates": 19.4,
+      "H48_target_only": 33.3,
+      "H48_past_covariates": 39.0
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 15,
+        "min_child_samples": 200
+      },
+      "H24_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 200
+      },
+      "H48_target_only": {
+        "num_leaves": 15,
+        "min_child_samples": 200
+      },
+      "H48_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      }
+    }
+  },
+  "ettm1": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 15.3,
+      "H24_past_covariates": 22.1,
+      "H48_target_only": 22.4,
+      "H48_past_covariates": 31.0
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H24_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "H48_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H48_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      }
+    }
+  },
+  "ettm2": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 27.1,
+      "H24_past_covariates": 37.3,
+      "H48_target_only": 35.4,
+      "H48_past_covariates": 42.5
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H24_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H48_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H48_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      }
+    }
+  },
+  "ecl": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 11.0,
+      "H24_past_covariates": 678.4,
+      "H48_target_only": 18.3,
+      "H48_past_covariates": 861.6
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "H24_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 200
+      },
+      "H48_target_only": {
+        "num_leaves": 15,
+        "min_child_samples": 200
+      },
+      "H48_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      }
+    }
+  },
+  "opsd-wind": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 13.6,
+      "H24_past_covariates": 23.9,
+      "H48_target_only": 19.0,
+      "H48_past_covariates": 35.5
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H24_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H48_target_only": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "H48_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 20
+      }
+    }
+  },
+  "sdwpf": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 11.5,
+      "H24_past_covariates": 192.8,
+      "H48_target_only": 23.2,
+      "H48_past_covariates": 359.1
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "H24_past_covariates": {
+        "num_leaves": 15,
+        "min_child_samples": 20
+      },
+      "H48_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 20
+      },
+      "H48_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      }
+    }
+  },
+  "solar-al": {
+    "git_head": "bc63480d4133922f4cfa3d252fdf0621548cafd7",
+    "machine": "x86_64",
+    "packages": {
+      "lightgbm": "4.6.0",
+      "numpy": "2.5.2",
+      "pandas": "3.0.5",
+      "scipy": "1.18.1"
+    },
+    "seconds": {
+      "H24_target_only": 38.4,
+      "H24_past_covariates": 451.4,
+      "H48_target_only": 50.4,
+      "H48_past_covariates": 602.8
+    },
+    "chosen": {
+      "H24_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H24_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H48_target_only": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      },
+      "H48_past_covariates": {
+        "num_leaves": 63,
+        "min_child_samples": 200
+      }
+    }
+  }
+}

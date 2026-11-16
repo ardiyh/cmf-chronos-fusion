@@ -1,0 +1,113 @@
+dataset,H,metric,contrast,n,mean_diff,median_diff,win_rate
+etth1,24,MASE,ridge - identity / target_units,145,0.0003828625741557608,0.0,0.2827586206896552
+etth1,24,MASE,ridge - identity / target_standardized,145,-0.0006093236165131441,-9.060888951362145e-07,0.5310344827586206
+etth1,24,MASE,ridge - identity / fused_standardized,145,-0.0006771211625371424,-9.975036235898571e-07,0.5310344827586206
+etth1,24,MASE,identity / target_units - target_standardized,145,0.012090151421507789,0.00011993539039995005,0.496551724137931
+etth1,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,145,0.0009921861906689057,1.017079915510699e-06,0.45517241379310347
+etth1,24,MASE,identity / target_units - fused_standardized,145,0.011991350033327734,0.00012007874775932237,0.496551724137931
+etth1,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,145,0.0010599837366929029,1.1046954855320479e-06,0.4482758620689655
+etth2,24,MASE,ridge - identity / target_units,145,0.0013358681695306294,0.0,0.31724137931034485
+etth2,24,MASE,ridge - identity / target_standardized,145,0.0005870169374616796,7.471594257180136e-07,0.4827586206896552
+etth2,24,MASE,ridge - identity / fused_standardized,145,0.00039871909688313434,1.4405004766793184e-07,0.496551724137931
+etth2,24,MASE,identity / target_units - target_standardized,145,-0.013634381948385024,-0.030004519066796576,0.5655172413793104
+etth2,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,145,0.0007488512320689497,-8.747540647391361e-07,0.5172413793103449
+etth2,24,MASE,identity / target_units - fused_standardized,145,-0.0136344075167278,-0.030004307642544692,0.5655172413793104
+etth2,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,145,0.0009371490726474941,-2.6827816190788667e-07,0.503448275862069
+ettm1,24,MASE,ridge - identity / target_units,150,-9.942615024248378e-05,0.0,0.25333333333333335
+ettm1,24,MASE,ridge - identity / target_standardized,150,0.0010339844275469893,1.113032433497363e-06,0.46
+ettm1,24,MASE,ridge - identity / fused_standardized,150,0.0010340292200572338,1.2202396696414652e-06,0.46
+ettm1,24,MASE,identity / target_units - target_standardized,150,-0.05021428040195777,-0.03296710094130825,0.6066666666666667
+ettm1,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,150,-0.001133410577789472,-7.696754625308166e-07,0.52
+ettm1,24,MASE,identity / target_units - fused_standardized,150,-0.05021427668269494,-0.032967070690494246,0.6066666666666667
+ettm1,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,150,-0.0011334553702997173,-1.1209184208049727e-06,0.5266666666666666
+ettm2,24,MASE,ridge - identity / target_units,150,-0.0002650395646098025,0.0,0.29333333333333333
+ettm2,24,MASE,ridge - identity / target_standardized,150,0.00045910753377419574,-1.1635398725062807e-07,0.5
+ettm2,24,MASE,ridge - identity / fused_standardized,150,0.0005364685802686569,-8.080736801606425e-07,0.52
+ettm2,24,MASE,identity / target_units - target_standardized,150,-0.10497000150123334,-0.03808707201907363,0.62
+ettm2,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,150,-0.0007241470983839985,1.1435984145768963e-08,0.5
+ettm2,24,MASE,identity / target_units - fused_standardized,150,-0.10497079098345104,-0.03808705141596744,0.62
+ettm2,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,150,-0.0008015081448784596,2.059228452477857e-07,0.49333333333333335
+ecl,24,MASE,ridge - identity / target_units,150,0.001082395143612399,0.0,0.42
+ecl,24,MASE,ridge - identity / target_standardized,150,-0.007397826929151487,-1.9096431930071267e-06,0.5866666666666667
+ecl,24,MASE,ridge - identity / fused_standardized,150,-0.00739638573608549,-1.9085588819772736e-06,0.5866666666666667
+ecl,24,MASE,identity / target_units - target_standardized,150,-0.021282756268885074,-0.017874330362590896,0.6466666666666666
+ecl,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.008480222072763886,3.854995800633976e-06,0.42
+ecl,24,MASE,identity / target_units - fused_standardized,150,-0.02126887298574306,-0.01787430125946854,0.6466666666666666
+ecl,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.00847878087969789,3.857930884421101e-06,0.42
+opsd-wind,24,MASE,ridge - identity / target_units,150,0.0012052361451115859,0.0,0.32666666666666666
+opsd-wind,24,MASE,ridge - identity / target_standardized,150,0.000545776461046739,5.669907208599723e-06,0.47333333333333333
+opsd-wind,24,MASE,ridge - identity / fused_standardized,150,0.0005919030551155085,9.139548855174873e-06,0.4666666666666667
+opsd-wind,24,MASE,identity / target_units - target_standardized,150,-0.006904059028074548,0.00225010983954671,0.4866666666666667
+opsd-wind,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.0006594596840648468,0.0007120470418853636,0.44666666666666666
+opsd-wind,24,MASE,identity / target_units - fused_standardized,150,-0.006904061593453864,0.0022500791889015215,0.4866666666666667
+opsd-wind,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.0006133330899960773,0.0007120483193482074,0.44666666666666666
+sdwpf,24,MASE,ridge - identity / target_units,150,0.0003624984113353506,1.1769253966678888e-12,0.36
+sdwpf,24,MASE,ridge - identity / target_standardized,150,-0.000936357339737659,-3.197678578341877e-06,0.5466666666666666
+sdwpf,24,MASE,ridge - identity / fused_standardized,150,-0.0009406077069778821,-3.207564036449787e-06,0.5466666666666666
+sdwpf,24,MASE,identity / target_units - target_standardized,150,-0.03580777238065874,-0.0007909387079987744,0.5533333333333333
+sdwpf,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.0012988557510730052,-1.931055916032376e-06,0.5066666666666667
+sdwpf,24,MASE,identity / target_units - fused_standardized,150,-0.035807774043874634,-0.000790909767039903,0.5533333333333333
+sdwpf,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.0013031061183132401,-1.9373921227444635e-06,0.5066666666666667
+solar-al,24,MASE,ridge - identity / target_units,150,-0.000716907932735278,4.718618894365593e-13,0.26
+solar-al,24,MASE,ridge - identity / target_standardized,150,-0.00931801436050168,2.624005009721486e-06,0.49333333333333335
+solar-al,24,MASE,ridge - identity / fused_standardized,150,-0.00934616329195772,2.5771487899284296e-06,0.49333333333333335
+solar-al,24,MASE,identity / target_units - target_standardized,150,0.04369116295510231,-0.005633721826374061,0.7333333333333333
+solar-al,24,MASE,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.008601106427766403,2.2601542499872847e-05,0.46
+solar-al,24,MASE,identity / target_units - fused_standardized,150,0.04369104882874056,-0.005633616270414928,0.7333333333333333
+solar-al,24,MASE,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.008629255359222444,2.2350682556983997e-05,0.46
+etth1,24,MASE_mean,ridge - identity / target_units,145,0.0006181415612371949,0.0,0.296551724137931
+etth1,24,MASE_mean,ridge - identity / target_standardized,145,-0.000581716048013387,-4.8171477029512744e-08,0.503448275862069
+etth1,24,MASE_mean,ridge - identity / fused_standardized,145,-0.0005427309216877492,7.405058066733972e-08,0.4896551724137931
+etth1,24,MASE_mean,identity / target_units - target_standardized,145,0.012838203122677694,0.00014481042402952893,0.496551724137931
+etth1,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,145,0.0011998576092505824,1.332474951182272e-06,0.47586206896551725
+etth1,24,MASE_mean,identity / target_units - fused_standardized,145,0.012810313887854892,0.00014481182275666304,0.496551724137931
+etth1,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,145,0.0011608724829249436,9.672997134391181e-07,0.4827586206896552
+etth2,24,MASE_mean,ridge - identity / target_units,145,0.001752530476945292,0.0,0.2827586206896552
+etth2,24,MASE_mean,ridge - identity / target_standardized,145,-0.00016365191974862352,1.5212782773499356e-06,0.43448275862068964
+etth2,24,MASE_mean,ridge - identity / fused_standardized,145,-0.00042779149888836086,1.5351597822954588e-06,0.4413793103448276
+etth2,24,MASE_mean,identity / target_units - target_standardized,145,-0.013144219279614497,-0.011588692139053336,0.5310344827586206
+etth2,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,145,0.0019161823966939153,-4.3773683688907994e-07,0.5172413793103449
+etth2,24,MASE_mean,identity / target_units - fused_standardized,145,-0.013144245174519339,-0.011588668977353223,0.5310344827586206
+etth2,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,145,0.0021803219758336524,-2.5669119008142616e-07,0.5103448275862069
+ettm1,24,MASE_mean,ridge - identity / target_units,150,-0.00014456781152211195,0.0,0.24666666666666667
+ettm1,24,MASE_mean,ridge - identity / target_standardized,150,0.0006682713408992693,6.330267916035415e-07,0.47333333333333333
+ettm1,24,MASE_mean,ridge - identity / fused_standardized,150,0.000668309760973481,8.233227809031907e-07,0.47333333333333333
+ettm1,24,MASE_mean,identity / target_units - target_standardized,150,-0.0471758126178035,-0.022039295742603854,0.6
+ettm1,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,150,-0.0008128391524213821,8.897521136530528e-08,0.5
+ettm1,24,MASE_mean,identity / target_units - fused_standardized,150,-0.04717581474858049,-0.022039288750948655,0.6
+ettm1,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,150,-0.0008128775724955919,-1.423938546796233e-07,0.5066666666666667
+ettm2,24,MASE_mean,ridge - identity / target_units,150,0.0003115433555800748,0.0,0.28
+ettm2,24,MASE_mean,ridge - identity / target_standardized,150,6.658445364285828e-05,-1.9430797906783148e-07,0.5066666666666667
+ettm2,24,MASE_mean,ridge - identity / fused_standardized,150,-2.9811626993467843e-05,-3.559621809395841e-07,0.5133333333333333
+ettm2,24,MASE_mean,identity / target_units - target_standardized,150,-0.09546090674792472,-0.06549709821918459,0.68
+ettm2,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.00024495890193721576,7.223531093072943e-07,0.4666666666666667
+ettm2,24,MASE_mean,identity / target_units - fused_standardized,150,-0.09547959143041627,-0.0654971092532512,0.68
+ettm2,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.0003413549825735428,7.445344712697644e-07,0.47333333333333333
+ecl,24,MASE_mean,ridge - identity / target_units,150,-1.1805416260742089e-05,0.0,0.38
+ecl,24,MASE_mean,ridge - identity / target_standardized,150,-0.0033782690983532866,5.501458249790314e-07,0.48
+ecl,24,MASE_mean,ridge - identity / fused_standardized,150,-0.0033964973579380035,6.147820605095777e-07,0.47333333333333333
+ecl,24,MASE_mean,identity / target_units - target_standardized,150,-0.07376603714177697,-0.028417392053020574,0.64
+ecl,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.0033664636820925457,4.991825800770844e-07,0.47333333333333333
+ecl,24,MASE_mean,identity / target_units - fused_standardized,150,-0.07385895859352057,-0.02841740036030782,0.64
+ecl,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.003384691941677261,7.155257149560335e-07,0.4666666666666667
+opsd-wind,24,MASE_mean,ridge - identity / target_units,150,0.0006272142794764371,0.0,0.38
+opsd-wind,24,MASE_mean,ridge - identity / target_standardized,150,0.0003943301330381116,-6.480372232720022e-06,0.52
+opsd-wind,24,MASE_mean,ridge - identity / fused_standardized,150,0.00042086578656303647,-6.5019425532220065e-06,0.52
+opsd-wind,24,MASE_mean,identity / target_units - target_standardized,150,-0.008102229140135642,0.0031044671504343313,0.49333333333333335
+opsd-wind,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.0002328841464383255,0.0002820531491858208,0.46
+opsd-wind,24,MASE_mean,identity / target_units - fused_standardized,150,-0.008095179091611018,0.003104489764475804,0.49333333333333335
+opsd-wind,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.00020634849291340066,0.0002822438566946611,0.46
+sdwpf,24,MASE_mean,ridge - identity / target_units,150,-0.0006022334287555023,-0.00020493901678276388,0.5533333333333333
+sdwpf,24,MASE_mean,ridge - identity / target_standardized,150,-0.00047023621561992254,1.9020439345728002e-05,0.47333333333333333
+sdwpf,24,MASE_mean,ridge - identity / fused_standardized,150,-0.00047347883799785144,1.903368900908059e-05,0.47333333333333333
+sdwpf,24,MASE_mean,identity / target_units - target_standardized,150,-0.02091652447211519,0.010768012613497649,0.42
+sdwpf,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,150,-0.00013199721313557667,-0.0003200880506818854,0.5466666666666666
+sdwpf,24,MASE_mean,identity / target_units - fused_standardized,150,-0.020916528163900473,0.010767964568377919,0.42
+sdwpf,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,150,-0.0001287545907576479,-0.0003200687896545429,0.5466666666666666
+solar-al,24,MASE_mean,ridge - identity / target_units,150,0.0035429231633983954,3.721009087503252e-07,0.37333333333333335
+solar-al,24,MASE_mean,ridge - identity / target_standardized,150,-0.0044134942652676624,-0.0002818238809994089,0.5466666666666666
+solar-al,24,MASE_mean,ridge - identity / fused_standardized,150,-0.004410872099531729,-0.00028195395932025056,0.5466666666666666
+solar-al,24,MASE_mean,identity / target_units - target_standardized,150,-0.011717795655078751,-0.009008184929295044,0.5466666666666666
+solar-al,24,MASE_mean,(ridge transform effect) - (identity transform effect) / target_standardized,150,0.007956417428666063,0.00026170560160517636,0.48
+solar-al,24,MASE_mean,identity / target_units - fused_standardized,150,-0.011717864745032048,-0.009008280602617321,0.5466666666666666
+solar-al,24,MASE_mean,(ridge transform effect) - (identity transform effect) / fused_standardized,150,0.00795379526293012,0.00026170699568787113,0.48

@@ -1,0 +1,22 @@
+{
+  "inference_commit": "9aacc4db4831c8592149605a66902460f5ea99f4",
+  "operations_sha256": "fdc5a7606963c91cacad1eedbda7c9020592707321d136766380b4cde30f85a1",
+  "planned_records": 8752,
+  "sources": {
+    "CHRONOS2_PREFLIGHT.json": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+    "CHRONOS2_RUNTIME.json": "fb5fb1937c25f4e2dc91b543c9aff8c0372aba9eee7bcbcacc579affd5457bb7",
+    "CHRONOS2_CONTROL_PROTOCOL.md": "a8e8dce248881d9f62415f3c8bf2e76531943d48d40f8eab7cf55ce13c6cf4a7",
+    "PROTOCOL_LOCK.json": "8b59e3ab7963b747ef52b9d114d06f9b2cadbd4e46272e1ccdde72ff10994d3f"
+  },
+  "primary_point": "quantile_0.5",
+  "wql_levels": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "wql_units": "raw doubled pinball; target units"
+}
