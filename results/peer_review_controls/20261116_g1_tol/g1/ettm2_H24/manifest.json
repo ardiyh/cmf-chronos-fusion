@@ -1,0 +1,288 @@
+{
+  "schema": "cmf-peer-review-controls-v1",
+  "status": "complete",
+  "created_utc": "2026-11-16T09:17:38.243196+00:00",
+  "endpoint_label": "CooledEndpoint: amazon/chronos-t5-base",
+  "device": "cuda",
+  "dataset": "ettm2",
+  "target": "OT",
+  "features": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL",
+    "OT"
+  ],
+  "n_rows": 69680,
+  "data_sha256": "92b5c396cf91ef9eed2264accaabf32dda8a92bd566808b02dc1465e2a9bc3e9",
+  "split": {
+    "name": "val",
+    "rule": "chronological 60/20/20 (legacy get_split_indices)",
+    "origin_start": 41808,
+    "horizon_end": 55744
+  },
+  "grid_kind": "capped_pilot",
+  "max_origins": 50,
+  "origin_rule": "stride = H, complete horizons inside the split only, zero-future origins kept (no future mask); a cap keeps evenly spaced indices, as in the retained 150-origin grid",
+  "origins": {
+    "24": [
+      41808,
+      42072,
+      42360,
+      42648,
+      42936,
+      43224,
+      43488,
+      43776,
+      44064,
+      44352,
+      44640,
+      44904,
+      45192,
+      45480,
+      45768,
+      46056,
+      46344,
+      46608,
+      46896,
+      47184,
+      47472,
+      47760,
+      48024,
+      48312,
+      48600,
+      48888,
+      49176,
+      49464,
+      49728,
+      50016,
+      50304,
+      50592,
+      50880,
+      51144,
+      51432,
+      51720,
+      52008,
+      52296,
+      52584,
+      52848,
+      53136,
+      53424,
+      53712,
+      54000,
+      54264,
+      54552,
+      54840,
+      55128,
+      55416,
+      55704
+    ]
+  },
+  "n_eligible": {
+    "24": 580
+  },
+  "adapters": [
+    "identity",
+    "ridge:ridge_lam=0.01",
+    "ridge:ridge_lam=1",
+    "ridge:ridge_lam=100",
+    "ridge_covonly:ridge_lam=0.01",
+    "ridge_covonly:ridge_lam=1",
+    "ridge_covonly:ridge_lam=100",
+    "ridge_lagged:lag_hours=1+3+6+24,ridge_lam=1",
+    "ridge_lagged:lag_hours=1+3+6+24,ridge_lam=100",
+    "ewma:alpha=0.2",
+    "ewma:alpha=0.5",
+    "ewma:alpha=0.8",
+    "residual:alpha=0.2,ridge_lam=1",
+    "residual:alpha=0.2,ridge_lam=100",
+    "residual:alpha=0.5,ridge_lam=1",
+    "residual:alpha=0.5,ridge_lam=100"
+  ],
+  "modes": [
+    "target_units"
+  ],
+  "repetitions": 1,
+  "base_seed": 2026,
+  "fit_seed": 42,
+  "adapter_hyperparameters": {
+    "identity": {},
+    "ridge:ridge_lam=0.01": {
+      "ridge_lam": 0.01
+    },
+    "ridge:ridge_lam=1": {
+      "ridge_lam": 1
+    },
+    "ridge:ridge_lam=100": {
+      "ridge_lam": 100
+    },
+    "ridge_covonly:ridge_lam=0.01": {
+      "ridge_lam": 0.01
+    },
+    "ridge_covonly:ridge_lam=1": {
+      "ridge_lam": 1
+    },
+    "ridge_covonly:ridge_lam=100": {
+      "ridge_lam": 100
+    },
+    "ridge_lagged:lag_hours=1+3+6+24,ridge_lam=1": {
+      "ridge_lam": 1,
+      "lag_hours": [
+        1.0,
+        3.0,
+        6.0,
+        24.0
+      ]
+    },
+    "ridge_lagged:lag_hours=1+3+6+24,ridge_lam=100": {
+      "ridge_lam": 100,
+      "lag_hours": [
+        1.0,
+        3.0,
+        6.0,
+        24.0
+      ]
+    },
+    "ewma:alpha=0.2": {
+      "alpha": 0.2
+    },
+    "ewma:alpha=0.5": {
+      "alpha": 0.5
+    },
+    "ewma:alpha=0.8": {
+      "alpha": 0.8
+    },
+    "residual:alpha=0.2,ridge_lam=1": {
+      "alpha": 0.2,
+      "ridge_lam": 1
+    },
+    "residual:alpha=0.2,ridge_lam=100": {
+      "alpha": 0.2,
+      "ridge_lam": 100
+    },
+    "residual:alpha=0.5,ridge_lam=1": {
+      "alpha": 0.5,
+      "ridge_lam": 1
+    },
+    "residual:alpha=0.5,ridge_lam=100": {
+      "alpha": 0.5,
+      "ridge_lam": 100
+    }
+  },
+  "hyperparameter_selection": "as written in each adapter spec, legacy defaults otherwise; no validation tuning inside this run",
+  "context_length": 512,
+  "seasonality": 96,
+  "num_samples": 50,
+  "sampling_args": {
+    "temperature": 1.0,
+    "top_k": 50,
+    "top_p": 1.0,
+    "limit_prediction_length": true
+  },
+  "quantile_levels": [
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    0.8,
+    0.9,
+    0.95
+  ],
+  "point_estimator": "sample median; mean-point MASE kept as sensitivity",
+  "environment": {
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:27:36) [GCC 11.2.0]",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "packages": {
+      "torch": "2.4.1",
+      "numpy": "1.26.4",
+      "pandas": "3.0.1",
+      "scipy": "1.11.4",
+      "transformers": "4.49.0",
+      "chronos-forecasting": "1.5.3"
+    },
+    "torch_cuda": "12.1",
+    "cuda_available": true,
+    "cuda_devices": [
+      "NVIDIA GeForce RTX 3070"
+    ],
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "source_sha256": {
+      "experiments/run_peer_review_controls.py": "c7894147a0d1b394d6af2e9040f688bb57a8210f1f730a15c8d3a464fac65cc1",
+      "experiments/run_revision.py": "e68a2e26dfbf678d5ca61eb2ff7a41596f814702a99eb9a26935ba49937b96b8",
+      "src/cmf_core.py": "03c8e54f6198ab384ea1f655161bf10ff683de210349350f5e7350e3d40d3d7d"
+    },
+    "git_head": "cabe91e35d88231de36c2a2338d41a2559906464",
+    "git_status_porcelain": [],
+    "git_diff_head_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "run_info": {
+    "argv": [
+      "--dataset",
+      "ettm2",
+      "--horizons",
+      "24",
+      "--adapters",
+      "identity",
+      "ridge:ridge_lam=0.01",
+      "ridge:ridge_lam=1",
+      "ridge:ridge_lam=100",
+      "ridge_covonly:ridge_lam=0.01",
+      "ridge_covonly:ridge_lam=1",
+      "ridge_covonly:ridge_lam=100",
+      "ridge_lagged:lag_hours=1+3+6+24,ridge_lam=1",
+      "ridge_lagged:lag_hours=1+3+6+24,ridge_lam=100",
+      "ewma:alpha=0.2",
+      "ewma:alpha=0.5",
+      "ewma:alpha=0.8",
+      "residual:alpha=0.2,ridge_lam=1",
+      "residual:alpha=0.2,ridge_lam=100",
+      "residual:alpha=0.5,ridge_lam=1",
+      "residual:alpha=0.5,ridge_lam=100",
+      "--modes",
+      "target_units",
+      "--repetitions",
+      "1",
+      "--base-seed",
+      "2026",
+      "--fit-seed",
+      "42",
+      "--device",
+      "cuda",
+      "--revision",
+      "ad294eaacead15db499b740ea4122266dd2a81a2",
+      "--max-origins",
+      "50",
+      "--split",
+      "val",
+      "--output-dir",
+      "results/peer_review_controls/20261116_g1_tol/g1/ettm2_H24"
+    ],
+    "checkpoint": {
+      "model_id": "amazon/chronos-t5-base",
+      "requested_revision": "ad294eaacead15db499b740ea4122266dd2a81a2",
+      "resolved_commit": "ad294eaacead15db499b740ea4122266dd2a81a2",
+      "dtype": "float32"
+    },
+    "data_config": {
+      "url": "/home/hilmi/Disertasi/paper1_CMF/CMF-code/data/ETT/ettm2.csv",
+      "format": "csv",
+      "feature_cols": [
+        "HUFL",
+        "HULL",
+        "MUFL",
+        "MULL",
+        "LUFL",
+        "LULL",
+        "OT"
+      ],
+      "target_col": "OT",
+      "seasonality": 96
+    }
+  },
+  "n_records": 850,
+  "finished_utc": "2026-11-16T09:40:43.948912+00:00",
+  "noise_summary_file": "identity_noise_summary.json"
+}

@@ -1,0 +1,14 @@
+{
+  "protocol_sha256": "11881902e4874a328c9e4cd7fb208c24e96e3676792fc56fde423292abd2be2a",
+  "preflight_sha256": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+  "analysis_sha256": "80df24fb4612743c913776c482d6307b3b250607c1018a9bc2e2aabc2882afbd",
+  "point": "identity sample median plus ridge shift",
+  "lambdas": [
+    0.1,
+    1,
+    10,
+    100,
+    1000
+  ],
+  "fit_fraction": 0.7
+}

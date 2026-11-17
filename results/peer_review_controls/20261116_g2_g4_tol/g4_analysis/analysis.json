@@ -1,0 +1,12 @@
+{
+  "point": "sample median MASE",
+  "families": {
+    "all_eligible": 14,
+    "extra_targets": 32,
+    "day_ahead": 3
+  },
+  "protocol_sha256": "ddff924df600f733d1866efe331613ec786d9a0722b11d2f8fad46c20c09801f",
+  "plan_sha256": "14689d9a9a7912343d4606c8c487473345e76e91354c6a30970b996c3b610a94",
+  "preflight_sha256": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+  "analysis_sha256": "3b371402a878bc11653f5a451ab1ba699517722a85769186b5120164a8f13e78"
+}

@@ -1,0 +1,21 @@
+{
+  "endpoint_label": "CooledEndpoint: amazon/chronos-t5-base",
+  "scope": "identity/target_units (bare endpoint) on this run's grid only",
+  "by_horizon": {
+    "24": {
+      "same_seed_replay": {
+        "n_pairs": 145,
+        "max_abs_sample_diff": 0.0,
+        "max_abs_mase_diff": 0.0
+      },
+      "independent_repetitions": {
+        "n_repetitions": 1,
+        "case_mean_mase": [
+          0.7187541015457743
+        ],
+        "std_case_mean_mase": null,
+        "relative_range_pct": 0.0
+      }
+    }
+  }
+}

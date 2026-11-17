@@ -97,10 +97,13 @@ inputs, source files and settings.
 - **Validation-tuned mechanism controls, output-side corrector and expanded
   evaluation**: protocols in `docs/protocols/`; runners
   `experiments/run_peer_review_controls.py` and `experiments/run_target_variants.py`,
-  test plan `scripts/plan_g2.py`, analyses `scripts/g2_analysis.py` and
-  `scripts/residual_corrector.py`.
+  test plan `scripts/plan_g2.py`, analyses `scripts/g2_analysis.py`,
+  `scripts/residual_corrector.py` and `scripts/g4_analysis.py`. Validation tuning and
+  validation identity runs are in `results/peer_review_controls/20261116_g1_tol/`; test runs,
+  the frozen test plan and the three analyses are in `results/peer_review_controls/20261116_g2_g4_tol/`.
 - **Latency**: `experiments/measure_guarded_latency.py` (synchronized, warmed-up,
-  repeated timing under a strict thermal guard).
+  repeated timing under a strict thermal guard). Both attempts reported in the article
+  were stopped by that guard before completion, so no latency results are included.
 
 GPU runs were wrapped by `scripts/run_with_gpu_guard.py` (telemetry, power and
 thermal guard) and `scripts/run_controls_cooled.py` (fixed delay and cooldown).

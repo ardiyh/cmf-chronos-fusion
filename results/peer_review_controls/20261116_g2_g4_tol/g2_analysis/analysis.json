@@ -1,0 +1,33 @@
+{
+  "point": "sample median MASE",
+  "determinism_max_abs_diff": {
+    "etth1_seed2027": 0.0,
+    "etth1_H24": 0.0,
+    "etth1_H48": 0.0,
+    "etth2_seed2027": 0.0,
+    "etth2_H24": 0.0,
+    "etth2_H48": 0.0,
+    "ettm1_seed2027": 0.0,
+    "ettm1_H24": 0.0,
+    "ettm1_H48": 0.0,
+    "ettm2_seed2027": 0.0,
+    "ettm2_H24": 0.0,
+    "ettm2_H48": 0.0,
+    "opsd-wind_seed2027": 0.0,
+    "opsd-wind_H24": 0.0,
+    "opsd-wind_H48": 0.0,
+    "sdwpf_seed2027": 0.0,
+    "sdwpf_H24": 0.0,
+    "sdwpf_H48": 0.0,
+    "solar-al_seed2027": 0.0,
+    "solar-al_H24": 0.0,
+    "solar-al_H48": 0.0,
+    "ecl_seed2027": 0.0,
+    "ecl_H24": 0.0,
+    "ecl_H48": 0.0
+  },
+  "protocol_sha256": "fe352abea67006d8744d69bbf5066894fbdae823ce43bdfadd0f67d295d3f652",
+  "plan_sha256": "14689d9a9a7912343d4606c8c487473345e76e91354c6a30970b996c3b610a94",
+  "preflight_sha256": "32712893954ac548fcf88b3a51a18688f848e83a95dce47d923b28190bacadd9",
+  "analysis_sha256": "306863578d46925e3397d734a7bd76baa843777bfbe6cc3d5b6584df56c3d9ab"
+}

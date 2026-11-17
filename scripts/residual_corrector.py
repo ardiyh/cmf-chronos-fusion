@@ -17,6 +17,7 @@ from experiments import run_chronos2_controls as c
 from experiments import run_lgbm_baseline as b
 from experiments import run_revision as legacy
 from scripts.chronos2_control_analysis import analyze_cases, require
+from scripts.plan_g2 import run_dir
 from src import cmf_core as cmf
 
 LAMBDAS = (0.1, 1, 10, 100, 1000)
@@ -143,13 +144,15 @@ def main(argv=None):
     preflight = json.loads(Path(args.preflight).read_text())
     primary, secondary, rows, selection = [], [], [], {}
     for d in c.DATASETS:
-        for run, split in ((Path(args.val_dir) / d, 'val'), *((Path(args.test_dir) / f'{d}_H{h}', 'test') for h in (24, 48))):
+        runs = [(run_dir(args.val_dir, d, h), 'val') for h in (24, 48)]
+        runs += [(Path(args.test_dir) / f'{d}_H{h}', 'test') for h in (24, 48)]
+        for run, split in runs:
             m = json.loads((run / 'manifest.json').read_text())
             require(m['status'] == 'complete' and m['split']['name'] == split and
                     m['data_sha256'] == preflight['datasets'][d]['data_sha256'],
                     f'{run}: incomplete, wrong split or frame')
         for h in (24, 48):
-            r = run_case(d, h, Path(args.val_dir) / d, Path(args.test_dir) / f'{d}_H{h}',
+            r = run_case(d, h, run_dir(args.val_dir, d, h), Path(args.test_dir) / f'{d}_H{h}',
                          preflight['datasets'][d])
             primary.append(dict(dataset=d, horizon=h, origins=r['origins'],
                                 past_covariates=r['covariates'], target_only=r['identity']))

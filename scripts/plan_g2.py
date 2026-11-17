@@ -32,12 +32,18 @@ def same_model(a, b):
             r.resolved_hyperparameters(a) == r.resolved_hyperparameters(b))
 
 
+def run_dir(root, dataset, horizon):
+    """One folder per dataset, or per dataset and horizon after an interruption."""
+    combined = Path(root) / dataset
+    return combined if combined.exists() else Path(root) / f'{dataset}_H{horizon}'
+
+
 def plan(g1_dir):
     out = {}
     for d in DATASETS:
-        selection = {f: r.select_on_validation(Path(g1_dir) / d, specs)
-                     for f, specs in FAMILIES.items()}
         for h in (24, 48):
+            selection = {f: r.select_on_validation(run_dir(g1_dir, d, h), specs)
+                         for f, specs in FAMILIES.items()}
             chosen = {f: s['by_horizon'][str(h)]['selected'] for f, s in selection.items()}
             winner = TABLE5_WINNERS[d, h]
             adapters = ['identity']
