@@ -1,10 +1,9 @@
-"""Compare rebuilt CMF datasets with the experiment copies, value by value.
+"""Check rebuilt CMF frame hashes and optionally compare the underlying data.
 
-For each dataset: column names, bitwise value equality, largest absolute
-difference, the timestamp encoding ratio (rebuilt / experiment) and whether
-the unchanged CMF loader reproduces the preflight frame hash from the rebuilt
-files. The loader reads paths from CMF_DATA_ROOT at import, so each root is
-hashed in its own subprocess.
+The CMF loader reads paths from CMF_DATA_ROOT at import, so frame hashes are
+computed in a subprocess. If the experiment files are available, also report
+column and value equality, maximum absolute difference and the ratio of rebuilt
+to original timestamp integers.
 """
 import argparse
 import contextlib
@@ -50,23 +49,28 @@ def frame_hashes(cmf_code, root):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    for name in ('--cmf-code', '--rebuilt', '--experiment', '--preflight', '--output'):
+    for name in ('--cmf-code', '--rebuilt', '--preflight', '--output'):
         p.add_argument(name, required=True)
+    p.add_argument('--experiment', help='root of the original experiment data files')
     args = p.parse_args()
+    if args.experiment and Path(args.experiment).resolve() == Path(args.rebuilt).resolve():
+        p.error('--experiment must point to a separate copy of the data')
     preflight = json.loads(Path(args.preflight).read_text())['datasets']
     rebuilt = frame_hashes(args.cmf_code, args.rebuilt)
     report = {}
     for d in [*CSV, *H5]:
-        (ca, ta, va), (cb, tb, vb) = read(args.rebuilt, d), read(args.experiment, d)
-        same_shape = va.shape == vb.shape
         report[d] = dict(
-            columns_equal=ca == cb, shape=list(va.shape), values_bitwise_equal=bool(
-                same_shape and np.array_equal(va, vb)),
-            max_abs_diff=float(np.max(np.abs(va - vb))) if same_shape else None,
-            timestamp_ratio=(sorted({float(x) for x in ta[:100] / tb[:100]})
-                             if ta is not None else None),
             rebuilt_frame_matches_preflight=rebuilt[d] == preflight[d]['data_sha256'],
             platform=sys.platform, pandas=pd.__version__)
+        if args.experiment:
+            (ca, ta, va), (cb, tb, vb) = read(args.rebuilt, d), read(args.experiment, d)
+            same_shape = va.shape == vb.shape
+            report[d].update(
+                columns_equal=ca == cb, shape=list(va.shape),
+                values_bitwise_equal=same_shape and va.dtype == vb.dtype and va.tobytes() == vb.tobytes(),
+                max_abs_diff=float(np.max(np.abs(va - vb))) if same_shape else None,
+                timestamp_ratio=(sorted({float(x) for x in ta[:100] / tb[:100]})
+                                 if ta is not None else None))
         print(d, report[d])
     Path(args.output).write_text(json.dumps(report, indent=2) + '\n')
 

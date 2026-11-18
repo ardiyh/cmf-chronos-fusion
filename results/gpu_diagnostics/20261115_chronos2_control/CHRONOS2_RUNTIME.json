@@ -1,0 +1,51 @@
+{
+  "created_utc": "2026-11-14T20:27:39.305245+00:00",
+  "python": "3.12.7",
+  "code_commit": "9aacc4db4831c8592149605a66902460f5ea99f4",
+  "model_id": "amazon/chronos-2",
+  "model_revision": "29ec3766d36d6f73f0696f85560a422f50e8498c",
+  "model_files": {
+    "model.safetensors": "ddcda3c7508bf2528087723e98a20707cc04b7f370ae275a9fd88078ddba4f42",
+    "config.json": "ef1143bfdc9c0376d9a056eefca46cb4b1ec3d0ffacd541ff56feb40fb708031"
+  },
+  "chronos_source_sha256": {
+    "chronos.py": "52a8ad41894195b1c244784e35e238c57e572d54fd980816b579c9c5fab78e3b",
+    "__about__.py": "9de67178c9847e385564ceb17ad46292b05d1d6b794f97a12fbd9961d3ed27e1",
+    "df_utils.py": "df452a311b406948e0dac1f36b0685e1b7eb6c245eb4b88fd0595037221fec38",
+    "utils.py": "0299e91f6ca902ff18c99e1260cfe81655744eae1ca82e541bda24eb395680ad",
+    "__init__.py": "f4602aa57fbe3bd3f328414a591d0594ed62099ef7621736ff9733420295bbf0",
+    "chronos_bolt.py": "572a3ffd23a7887c423d234fd0086a4dfa2bac0c3e34d4b7d42eb9cda2e3d1d4",
+    "base.py": "8938c48de071534c3fecd4e2762a5f99b86d592e8de26aeaa21ce81a08f99c31",
+    "boto_utils.py": "f84a7bca1e69838359309f58bd66f41d9c6da6619b803e88fb87af59d8012e0b",
+    "chronos2/trainer.py": "3868aaefd2477eb0d6a68b2b0c7309ad0f00d1d3b02fb8deb4f8f211afecbd88",
+    "chronos2/config.py": "d4ffa61c796ee87b340540e7f8131008aedcf7b1c580321053dec51d609d3101",
+    "chronos2/model.py": "13ed6b3e1010e1b60fad45cd078da5ff1cda23cdfcaf9055a996276219d9e3c1",
+    "chronos2/layers.py": "73493f306ecfaa21fa57636ff46321ccb5d50ded02a382598cf759dbfc9dd60f",
+    "chronos2/__init__.py": "128856d0b4660e586b74a4971a19dfaaca666e350ebbfb50297b667c1d949995",
+    "chronos2/pipeline.py": "482d28d81b7a50852fd081bd660f5ce39dab79534c237157efaf12bb586c07e1",
+    "chronos2/preprocess.py": "a6da6192bc3e51a24d7adee4398c7436ce56f532fbdcf8dcef4c0c366ee02246",
+    "chronos2/dataset.py": "90b34b05af99069972a33aa780019ab2fca7514e907b68921a2d5c9205584e0a"
+  },
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "transformers": "5.15.1",
+    "chronos-forecasting": "2.3.1",
+    "numpy": "2.5.2",
+    "pandas": "3.0.5",
+    "scipy": "1.18.1",
+    "h5py": "3.16.0",
+    "matplotlib": "3.11.1"
+  },
+  "torch_cuda": "12.1",
+  "device_query": "uuid, name, driver_version, power.limit [W]\nGPU-58a0364b-111f-c8bf-8792-97271747f88b, NVIDIA GeForce RTX 3070, 535.230.02, 160.00 W\n",
+  "source_sha256": {
+    "experiments/run_chronos2_controls.py": "3311ea2168c969cedec8d85db15bf0e8a155d59c49374f33e3a1401bc6d50edb",
+    "scripts/chronos2_control_analysis.py": "e4acac4299617eef045f4cc0be2cfc5f4ffafb008428b5d5b9076b678db3e264",
+    "scripts/prepare_chronos2_controls.py": "e7709868625d337cde15a8b3595705b77917d65da34f8aee6e6586540bc97d45",
+    "scripts/run_a4_paced.py": "2f49ff485820bc9bab30f465752e72107e9019cfeef6cb7320ef719a25e213e8",
+    "scripts/run_with_gpu_guard.py": "06c96191063b53bd78da1281b4891224d69935e62e0616c144a33417c4e64932",
+    "experiments/run_peer_review_controls.py": "c7894147a0d1b394d6af2e9040f688bb57a8210f1f730a15c8d3a464fac65cc1",
+    "experiments/run_revision.py": "e68a2e26dfbf678d5ca61eb2ff7a41596f814702a99eb9a26935ba49937b96b8",
+    "src/cmf_core.py": "03c8e54f6198ab384ea1f655161bf10ff683de210349350f5e7350e3d40d3d7d"
+  }
+}

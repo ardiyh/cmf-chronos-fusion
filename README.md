@@ -48,7 +48,9 @@ platform. Results on other architectures may differ at that numerical level.
 
 The raw data are not redistributed. `data_prep/reconstruct.sh` downloads pinned
 sources, rebuilds the processed files with the preprocessing scripts used in the
-article and compares each rebuilt frame with the recorded frame hashes.
+article and records which frame hashes match the experiment preflight in
+`WORK/comparison.json`. If you have the original experiment files, pass their
+data directory in place of `-` to also compare values and timestamp encodings.
 
 | Dataset | Source | Terms |
 |---|---|---|
@@ -59,18 +61,29 @@ article and compares each rebuilt frame with the recorded frame hashes.
 | SDWPF | Baidu KDD Cup 2022 (`sdwpf_245days_v1.csv`, registration required) | KDD Cup terms |
 
 ```sh
+python3.12 -m venv .venv-prep
+.venv-prep/bin/python -m pip install -r requirements/data_prep.txt
+python3.12 -m venv .venv-lgbm
+.venv-lgbm/bin/python -m pip install -r requirements/lgbm.txt
+
 # place sdwpf_245days_v1.csv and the turbine location file in WORK/raw/sdwpf/ first
-bash data_prep/reconstruct.sh WORK data_prep . WORK/rebuilt/data \
+PREP_PYTHON="$PWD/.venv-prep/bin/python" PYTHON="$PWD/.venv-lgbm/bin/python" \
+  bash data_prep/reconstruct.sh WORK data_prep . - \
   results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/CHRONOS2_PREFLIGHT.json
 export CMF_DATA_ROOT=WORK/rebuilt/data
 ```
 
-The rebuilt values match the experiment frames exactly (ETT byte-identical
-CSVs; ECL, SDWPF and Solar-AL bitwise; OPSD within 5×10⁻¹³ MW). The experiment
-copies of ECL, OPSD and SDWPF stored microsecond timestamps that the loader reads
-as nanoseconds, so their recorded frame hashes include dates in January 1970;
-all evaluations are positional and use no calendar feature. SDWPF has gaps of up
-to 38 h, and missing readings are set to zero by its preprocessing.
+On x86-64 Linux, the rebuilt ETT CSVs were byte-identical to the experiment
+copies and the values in all eight datasets matched bit for bit. The arm64
+OPSD rebuild differed from the x86-64 experiment copy by at most 4.55×10⁻¹³ MW.
+
+The four ETT datasets and Solar-AL reproduced the recorded frame hashes on
+x86-64. ECL, OPSD and SDWPF used microsecond timestamps in the experiments. The
+loader read them as nanoseconds, so the recorded frame hashes include dates in
+January 1970. The rebuilt files encode the intended dates in nanoseconds and
+therefore have different frame hashes. Evaluations use observation positions
+and omit calendar features. SDWPF has gaps of up to 38 h, and preprocessing sets
+missing readings to zero.
 
 ## Reproducing the experiments
 
@@ -78,9 +91,23 @@ Set `PYTHONPATH=.` and `CMF_DATA_ROOT` as above. Every runner refuses to
 overwrite an existing output folder and writes a manifest with hashes of its
 inputs, source files and settings.
 
+For Chronos-2 and LightGBM runs on the rebuilt data, generate a local preflight
+and pass it as `--preflight`. The original preflight remains in `results/` with
+the published runs. On x86-64 the local preflight reproduced the original
+origin grids and dataset settings, with the three frame-hash differences above.
+
+```sh
+PYTHONPATH=. .venv-lgbm/bin/python scripts/prepare_chronos2_controls.py \
+  --retained-dir results/rtx_20260803_test --output WORK/REBUILT_PREFLIGHT.json
+```
+
 - **Retained benchmark and validation selection** (Tables 3, 5, 6):
   `experiments/run_revision.py`, `experiments/run_cmf_select.py`,
   `scripts/cmf_select_and_significance.py`, `scripts/sinergi_zero_future_sensitivity.py`.
+  The retained runs are `results/rtx_20260803_val_from_june/` (validation summary),
+  `results/rtx_20260803_test/` (test per-origin losses and the selection table) and
+  `results/sinergi_gpu_retry_20260815_140w/` (all-origin Solar-AL/SDWPF reruns); pass
+  them as `--val_dir`/`--test_dir` instead of the default folder names.
 - **Scale-consistent ablation** (Table 7, Supplement S1):
   `experiments/run_peer_review_controls.py --adapters identity ridge --modes
   target_units target_standardized fused_standardized --horizons 24
@@ -89,13 +116,13 @@ inputs, source files and settings.
 - **Chronos-2 target-only vs past-covariates** (Table 4, Supplement S3):
   `scripts/prepare_chronos2_controls.py`, `experiments/run_chronos2_controls.py`,
   `scripts/chronos2_control_analysis.py`.
-- **LightGBM covariate baseline** (Supplement S4.1):
+- **LightGBM covariate baseline** (Table 8, Supplement S4.1):
   `experiments/run_lgbm_baseline.py --preflight <CHRONOS2_PREFLIGHT.json>
   --protocol docs/protocols/D5_LGBM_PROTOCOL_20261116.md --output-dir RUN/primary`
   (and `--replay --datasets etth1 opsd-wind --output-dir RUN/replay`), then
   `scripts/lgbm_baseline_analysis.py --run-dir RUN --c2-source <Chronos-2 run>`.
 - **Validation-tuned mechanism controls, output-side corrector and expanded
-  evaluation**: protocols in `docs/protocols/`; runners
+  evaluation** (Table 8, Supplements S4.2, S4.3 and S5): protocols in `docs/protocols/`; runners
   `experiments/run_peer_review_controls.py` and `experiments/run_target_variants.py`,
   test plan `scripts/plan_g2.py`, analyses `scripts/g2_analysis.py`,
   `scripts/residual_corrector.py` and `scripts/g4_analysis.py`. Validation tuning and
@@ -121,6 +148,9 @@ repository from which this package was assembled.
 ```sh
 PYTHONPATH=. python -m unittest discover -s tests
 ```
+
+The tests need no model weights, GPU or data and run on CPU; the
+`requirements/lgbm.txt` environment covers the whole suite.
 
 ## Citation and license
 

@@ -1,0 +1,6 @@
+# Data rebuild (data_prep/reconstruct.sh, PREP_PYTHON): the unchanged preprocessing
+# scripts use pandas frequency aliases removed in pandas 3, so they need pandas 2.2.
+pandas==2.2.2
+numpy==1.26.4
+h5py==3.11.0
+tables==3.10.1
