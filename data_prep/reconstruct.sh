@@ -34,7 +34,7 @@ curl -sSfL -o $RAW/ecl/LD2011_2014.txt.zip \
 curl -sSfL -o $RAW/opsd/time_series_60min_singleindex.csv \
   https://data.open-power-system-data.org/time_series/2020-10-06/time_series_60min_singleindex.csv
 # SDWPF (Baidu KDD Cup 2022): sdwpf_245days_v1.csv and the turbine location file
-# must be placed in $RAW/sdwpf/ by hand (registration-gated download).
+# must be placed in $RAW/sdwpf/ by hand (see data_prep/DATASETS.md).
 (cd "$RAW" && shasum -a 256 ett/{ETTh1,ETTh2,ETTm1,ETTm2}.csv \
   solar/solar_AL.txt.gz ecl/LD2011_2014.txt.zip opsd/time_series_60min_singleindex.csv \
   sdwpf/{sdwpf_245days_v1,sdwpf_baidukddcup2022_turb_location}.csv > RAW_SHA256SUMS)

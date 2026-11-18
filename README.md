@@ -46,19 +46,24 @@ platform. Results on other architectures may differ at that numerical level.
 
 ## Data
 
-The raw data are not redistributed. `data_prep/reconstruct.sh` downloads pinned
-sources, rebuilds the processed files with the preprocessing scripts used in the
-article and records which frame hashes match the experiment preflight in
-`WORK/comparison.json`. If you have the original experiment files, pass their
-data directory in place of `-` to also compare values and timestamp encodings.
+`data_prep/retained-inputs.zip` contains the six archived experiment inputs
+(ETTh1, ETTh2, ETTm1, ETTm2, ECL and SDWPF). The ETT files are the original
+benchmark CSVs. The archive contains only the processed HDF5 files for ECL and
+SDWPF. For attribution, preprocessing and checksum verification, see
+[Dataset preparation](data_prep/DATASETS.md).
+
+`data_prep/reconstruct.sh` downloads the pinned sources, runs the original
+preprocessing scripts and records the comparison with the experiment preflight
+in `WORK/comparison.json`. Pass a separate directory of experiment inputs in
+place of `-` to also compare values and timestamp encodings.
 
 | Dataset | Source | Terms |
 |---|---|---|
-| ETTh1/h2/m1/m2 | ETDataset, commit 1d16c8f4 (`ETT-small`) | see the ETDataset repository |
+| ETTh1/h2/m1/m2 | ETDataset, commit 1d16c8f4 (`ETT-small`) | CC BY-ND 4.0 |
 | ECL | UCI Machine Learning Repository, dataset 00321 (LD2011_2014) | CC BY 4.0 |
 | OPSD-wind | Open Power System Data, time series 2020-10-06 | see OPSD |
 | Solar-AL | LSTNet data repository, commit 7f402f18 (`solar_AL.txt.gz`) | see the repository |
-| SDWPF | Baidu KDD Cup 2022 (`sdwpf_245days_v1.csv`, registration required) | KDD Cup terms |
+| SDWPF | Baidu KDD Cup 2022 files from the [authors' Figshare deposit](https://doi.org/10.6084/m9.figshare.24798654) | CC BY 4.0 |
 
 ```sh
 python3.12 -m venv .venv-prep
@@ -66,7 +71,7 @@ python3.12 -m venv .venv-prep
 python3.12 -m venv .venv-lgbm
 .venv-lgbm/bin/python -m pip install -r requirements/lgbm.txt
 
-# place sdwpf_245days_v1.csv and the turbine location file in WORK/raw/sdwpf/ first
+# place the two SDWPF files listed in data_prep/DATASETS.md in WORK/raw/sdwpf/ first
 PREP_PYTHON="$PWD/.venv-prep/bin/python" PYTHON="$PWD/.venv-lgbm/bin/python" \
   bash data_prep/reconstruct.sh WORK data_prep . - \
   results/peer_review_controls/20261115_chronos2_target_covariates_recovery_1135/CHRONOS2_PREFLIGHT.json

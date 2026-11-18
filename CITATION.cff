@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this code or results, please cite the article."
 title: "cmf-chronos-fusion: code and results for pre-tokenization multivariate fusion with a frozen Chronos-T5"
 type: software
+version: 1.0.0
+date-released: "2026-11-18"
 abstract: "Code, data-preparation scripts, frozen experiment protocols and per-origin results for Chronos Multivariate Fusion (CMF), a context-local adapter that compresses a multivariate history into the scalar history accepted by a frozen Chronos-T5 forecaster, evaluated on eight public energy datasets with validation-tuned mechanism controls, matched baselines and an expanded evaluation."
 keywords:
   - Chronos Foundation Model
