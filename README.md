@@ -159,5 +159,7 @@ The tests need no model weights, GPU or data and run on CPU; the
 
 ## Citation and license
 
+The versioned archive of v1.0.0 is available on [Zenodo (10.5281/zenodo.24330607)](https://doi.org/10.5281/zenodo.24330607).
+
 Please cite the article (see `CITATION.cff`). Code is released under the MIT
 License.
